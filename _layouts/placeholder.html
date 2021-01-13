@@ -10,5 +10,9 @@
 
   <body >
   <img src="{{page.image}}" alt="{{page.alt}}">
+    
+   {{if page.pdf}}
+    <a href="{{page.pdf}}" >view as pdf</a>
+    {{endif}}
   </body>
 </html>
