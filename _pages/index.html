@@ -8,14 +8,14 @@ header:
   overlay_image: /assets/images/sample.jpg
   actions:
     - label: "More info"
-      url: "https://github.com/mmistakes/minimal-mistakes/"
+      url: "#info"
 excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork" 
-feature_row3:
+more_info:
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "Logo"
     title: "What is CSR Explore?"
-    excerpt: 'Edit this section under feature_row3 in pages/index.html. Edit this section under feature_row3 in pages/index.html.Edit this section under feature_row3 in pages/index.html.'
-    url: "#test-link"
+    excerpt: 'Edit this section under More_info in pages/index.html. Edit this section under more_info in pages/index.html.Edit this section under more_info in pages/index.html.'
+    url: "#info"
     btn_label: "Link to google form"
     btn_class: "btn--primary"
 feature_row:
@@ -40,7 +40,25 @@ feature_row:
     url: "#test-link"
     btn_label: "Read More"
     btn_class: "btn--primary"
+gallery:
+  - url: /assets/images/unsplash-gallery-image-1.jpg
+    image_path: /assets/images/unsplash-gallery-image-1-th.jpg
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
+  - url: /assets/images/unsplash-gallery-image-2.jpg
+    image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+    title: "Image 2 title caption"
+  - url: /assets/images/unsplash-gallery-image-3.jpg
+    image_path: /assets/images/unsplash-gallery-image-3-th.jpg
+    alt: "placeholder image 3"
+    title: "Image 3 title caption"
 ---
-{% include feature_row id="feature_row3" type="right" %}
+{% include feature_row id="more_info" type="right" %}
 <h1 class = "text-center"> Speakers </h1>
 {% include feature_row %}
+{% include feature_row id="more_info" type="left" %}
+{% include feature_row id="more_info" type="center" %}
+{% include feature_row id="more_info" type="right" %}
+<h1 class = "text-center"> Sponsors </h1>
+{% include gallery %}
